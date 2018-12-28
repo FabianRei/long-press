@@ -1,7 +1,7 @@
 ﻿# Forked version
 
 Adapted this repository so that I can use German "Umlaute" on my US keyboard by long pressing the characters.
-This version is workig the way I want it to work. I might still push a minor updated, if I find time, though.
+This version is workig the way I want it to work. I might still push a minor update if I find time, though.
 [Not sure if possible, but it would be great, if the letter automatically changes while pressing the key. 
 Now it only changes after the press is released after certain amount of time. Is there any reason for this?]
 
