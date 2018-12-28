@@ -5,6 +5,10 @@ This version is workig the way I want it to work. I might still push a minor upd
 [Not sure if possible, but it would be great, if the letter automatically changes while pressing the key. 
 Now it only changes after the press is released after certain amount of time. Is there any reason for this?]
 
+update:
+I changed the script based on the idea stated above. I feel that this is a way nicer way, as the letter now changes
+automatically, which gives me a way more natural feel. Might need more processing power, as there is a while loop now
+(but not much, I guess). Also, the spamming of the hotkey might be less smooth now (but see for yourself!) 
 
 # Long Press
 
