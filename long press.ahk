@@ -55,15 +55,25 @@ return  ; end of auto-execute ------------------------------------------------
 
 long_press:
 stringTrimLeft, key, a_thisHotkey, 1  ; trim ~ symbol
-keyWait, % key
-if (a_timeSinceThisHotkey > press_duration) and (a_timeSinceThisHotkey < spam_start)
+varDidReplace := false
+while(GetKeyState(key,"P")) 
+{
+if (a_timeSinceThisHotkey > press_duration) and (a_timeSinceThisHotkey < spam_start) and !varDidReplace
     {
+    varDidReplace := true
     scancode := "LP_" . format("SC{:x}", getKeySC(key))
     stored_value := %scancode%
     if isLabel(stored_value)
         goSub, % stored_value
     else send, % "{backspace}" . stored_value
     }
+
+if (a_timeSinceThisHotkey >= spam_start)
+    {
+    send, % "{backspace}" . key
+    }
+Sleep, 20
+}
 return
 
 
