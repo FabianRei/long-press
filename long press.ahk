@@ -75,6 +75,8 @@ else fileCreateShortcut, % a_scriptFullPath, % a_startup "\long press.lnk"
 menu, tray, % fileExist(a_startup "\long press.lnk") ? ("check") : ("unCheck"), Start with Windows
 return
 
-
+CapsLock & a::Send Ä
+CapsLock & u::Send Ü
+CapsLock & o::Send Ö
 
 #include, %a_scriptDir%\commands.ahk
