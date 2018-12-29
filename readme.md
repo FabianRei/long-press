@@ -8,7 +8,7 @@ Now it only changes after the press is released after certain amount of time. Is
 update:
 I changed the script based on the idea stated above. I feel that this is a way nicer way, as the letter now changes
 automatically, which gives me a way more natural feel. Might need more processing power, as there is a while loop now
-(but not much, I guess). Also, the spamming of the hotkey might be less smooth now (but see for yourself!) 
+(but not much, I guess). The spamming of multiple original keys (as instaed of äs, for example) is now fixed.
 
 # Long Press
 
